@@ -13,7 +13,7 @@ module encoder_tb ();
     mux2x1 DUT2(.sel(clk), .a(muxa), .b(muxb));
 
     initial begin
-        $dumpfile("test/encoder_tb.vcd");
+        $dumpfile("encoder_tb.vcd");
         $dumpvars;
 
         clk = 1;
