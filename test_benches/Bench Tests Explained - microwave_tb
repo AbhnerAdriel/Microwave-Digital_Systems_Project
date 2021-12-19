@@ -1,0 +1,58 @@
+
+>> ESPECIFICAÇÕES DA BANCADA DE TESTE DO MICROWAVE (microwave_tb) <<
+        
+
+        (Quando vamos tentar ligar com a porta aberta)
+        Teste 1:
+        - O microondas estará com tudo zerado.
+        - A porta estará aberta
+        - O usuário entrará o número 3:59
+        - O usuário tentará começar o microondas
+        - O microondas não ligará
+        - O usuário irá fechar a porta
+        - O usuário vai clicar em start
+        - O microondas vai funcionar normalmente até o tempo acabar
+        
+        ---------------------------------------------------------------------
+
+        (Quando a porta for aberta como microondas ligado)
+        Teste 2:
+        - O microondas estará com tudo zerado.
+        - A porta estará fechada
+        - O usuário entrará o número 2:45
+        - Depois de 30 segundos a porta será aberta
+        - O timer irá parar
+        - A porta será fechada
+        - Será clicado em start para retomar o timer
+        - O microondas vai funcionar normalmente até o tempo acabar
+
+        ---------------------------------------------------------------------
+
+        (Quando for apertado em "parar" como microondas ligado)
+        Teste 3:
+        - O microondas estará com tudo zerado.
+        - A porta estará fechada
+        - O usuário entrará o número 4:45
+        - Depois de 30 segundos o botão de parar será pressionado
+        - O microondas será desligado
+        - Vai ser clicado em start
+        - O microondas vai ser ligado
+        - O microondas vai funcionar normalmente até o tempo acabar
+    
+        ---------------------------------------------------------------------
+
+        Teste 4:
+        - O microondas estará com tudo zerado.
+        - A porta estará fechada
+        - O usuário entrará o número 2:35
+        - Depois de 30 segundos o botão de limpar será pressionado
+        - O timer será zerado
+        - O microondas será desligado
+
+        ---------------------------------------------------------------------
+
+        Teste 5:
+        - O microondas estará com tudo zerado.
+        - A porta estará fechada
+        - O usuário entrará o número 1:79
+        - O microondas será ligado e irá até 0
