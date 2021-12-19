@@ -1,4 +1,4 @@
-module microwave(mins_seg, sec_tens_seg, sec_ones_seg,  startn, clearn, stopn, door_closed, keypad, clock);
+module microwave(mins_seg, sec_tens_seg, sec_ones_seg, mag_on, startn, clearn, stopn, door_closed, keypad, clock);
 
     // microwave inputs:
     input wire startn, clearn, stopn, door_closed;
@@ -35,11 +35,10 @@ module microwave(mins_seg, sec_tens_seg, sec_ones_seg,  startn, clearn, stopn, d
 
     // control instance:
     control main_control(.startn(startn) , .stopn(stopn) , .clearn(clearn) , .door_closed(door_closed),
-                        .mag_on(mag_output) , .timer_done(timer_done) );
+                        .mag_on(mag_output) , .timer_done(timer_done));
 
     // decoder instance:
     decoder decoder_display(.sec_ones(sec_ones) , .sec_tens(sec_tens) , .min(min) , .sec_ones_segs(sec_ones_seg) , 
-                            .sec_tens_segs(sec_tens_seg) , .min_segs(mins_seg)
-                            );
+                            .sec_tens_segs(sec_tens_seg) , .min_segs(mins_seg));
 
 endmodule
