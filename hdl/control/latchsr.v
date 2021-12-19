@@ -4,7 +4,7 @@ module latchsr (Q, S, R);
   // inputs:
   input wire S, R;
 
-  output reg Q;
+  output wire Q;
   assign Q = S | (!R & Q);
 
 endmodule

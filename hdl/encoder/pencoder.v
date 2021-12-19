@@ -1,4 +1,4 @@
-module pencoder (D, all_off enablen, keypad);
+module pencoder(D, all_off, enablen, keypad);
 
     input wire enablen;
     input wire [9:0] keypad;
@@ -6,8 +6,8 @@ module pencoder (D, all_off enablen, keypad);
     output wire [3:0] D;
     output wire all_off;
 
-    // numeric keypad output:
-    assign D = (keypad & 512) ? 4'd9 :
+    // numeric keypad output (0 - 9):
+    assign D = (keypad & 512) ? 4'd9 :  
             (keypad & 256) ? 4'd8 :
             (keypad & 128) ? 4'd7 :
             (keypad & 64)  ? 4'd6 :
