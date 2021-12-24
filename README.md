@@ -15,3 +15,7 @@ Final project of the subject of Digital Systems (2nd Period) of the Computer Sci
     The  controller  which  will  design  allows  the  user to enter the desired cook time in minutes and seconds and offers the normal basic user controls for a typical oven         similar to the picture in figure above.
   </p>
 </div>
+
+## Project structure
+
+![image](https://github.com/AbhnerAdriel/Microwave_Project/blob/main/structure_project.png)
